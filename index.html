@@ -8,7 +8,7 @@
 <meta property="og:title" content="The Baht Method">
 <meta property="og:description" content="Turn crypto into Thai baht with a flat $1 fee. Instant PDF guide for travelers in Thailand.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="./uploads/pasted-1782015924422-0.png">
+<meta property="og:image" content="./uploads/proof-cash-receipt.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script src="./support.js"></script>
 </head>
@@ -29,6 +29,13 @@
     .bm-cta{transition:background .4s cubic-bezier(.22,.61,.36,1),transform .4s cubic-bezier(.22,.61,.36,1),box-shadow .5s cubic-bezier(.22,.61,.36,1)}
     .bm-cta:hover{background:#17130F;box-shadow:0 18px 40px -18px rgba(188,80,46,.6)}
     .bm-faq{cursor:pointer}
+    .bm-proof-grid{margin-top:46px;display:grid;grid-template-columns:1.12fr .88fr;gap:24px;align-items:stretch}
+    .bm-proof-stack{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .bm-proof-card{margin:0;background:#FBF8F0;border:1px solid rgba(168,154,133,0.5);border-radius:3px;overflow:hidden;box-shadow:0 24px 54px -38px rgba(42,38,34,.42)}
+    .bm-proof-card img{display:block;width:100%;height:100%;object-fit:cover}
+    .bm-proof-card figcaption{padding:16px 18px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;line-height:1.4;color:#3E3830}
+    .bm-proof-note{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+    @media (max-width:900px){.bm-proof-grid,.bm-proof-stack,.bm-proof-note{grid-template-columns:1fr}.bm-proof-card img{height:auto;max-height:520px}.bm-proof-hero img{aspect-ratio:4/5}.bm-proof-phone img{max-height:620px;object-position:top}}
   </style>
 </helmet>
 <div style="font-family:Inter,sans-serif;overflow-x:hidden;background:#F4EFE4">
@@ -132,25 +139,43 @@
     <h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:46px;line-height:1.05;color:#1C1814;max-width:14ch">Proof, not promises</h2>
     <p style="margin-top:20px;max-width:56ch;font:400 17px/1.65 Inter,sans-serif;color:#564E44">Real receipt. Real baht. Real MoneyGram pickup confirmation from the actual app — captured by a buyer mid-withdrawal. This is the exact flow you'll follow.</p>
 
-    <div style="margin-top:46px;display:grid;grid-template-columns:1fr 1fr 0.9fr;gap:24px;align-items:start">
-      <figure style="margin:0;background:#FBF8F0;border:1px solid rgba(168,154,133,0.5);border-radius:3px;overflow:hidden">
-        <img src="./uploads/pasted-1782015924422-0.png" alt="Receipt-style comparison showing The Baht Method $1 fee versus old withdrawal costs" style="display:block;width:100%;height:330px;object-fit:cover">
-        <figcaption style="padding:16px 18px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;line-height:1.4;color:#3E3830">Withdrawal · 20,850 ฿<br><span style="font-size:15px;color:#6B6256">Cash in hand. Fee paid: $1. <span style="color:#3E8E5A;font-style:normal;font-family:Inter;font-size:12px;letter-spacing:.1em;text-transform:uppercase">Verified</span></span></figcaption>
+    <div class="bm-proof-grid">
+      <figure class="bm-proof-card bm-proof-hero">
+        <img src="./uploads/proof-cash-receipt.jpg" alt="Thai baht cash and SCB MoneyGram receipt after pickup">
+        <figcaption>Cash in hand · SCB MoneyGram receipt<br><span style="font-size:15px;color:#6B6256">The pickup finished at the branch, not in theory.</span></figcaption>
       </figure>
-      <figure style="margin:0;background:#FBF8F0;border:1px solid rgba(168,154,133,0.5);border-radius:3px;overflow:hidden">
-        <img src="./uploads/inside-preview.png" alt="Preview of the guide sections and four-step process" style="display:block;width:100%;height:330px;object-fit:cover">
-        <figcaption style="padding:16px 18px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;line-height:1.4;color:#3E3830">MoneyGram app · Ready to pick up<br><span style="font-size:15px;color:#6B6256">Show the agent. Walk out with baht.</span></figcaption>
-      </figure>
-      <div style="background:#221E1A;border-radius:3px;padding:28px 26px;align-self:stretch">
-        <p style="font:600 11px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#C99A3F;margin-bottom:20px">What this proves</p>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:16px">
-          <li style="display:flex;gap:11px;font:400 15px/1.5 Inter,sans-serif;color:#E4DCCD"><span style="color:#C99A3F">→</span>The MoneyGram flow works end-to-end in Thailand</li>
-          <li style="display:flex;gap:11px;font:400 15px/1.5 Inter,sans-serif;color:#E4DCCD"><span style="color:#C99A3F">→</span>Real 5-figure baht payouts at a single visit</li>
-          <li style="display:flex;gap:11px;font:400 15px/1.5 Inter,sans-serif;color:#E4DCCD"><span style="color:#C99A3F">→</span>Standard ID + reference number, nothing exotic</li>
-        </ul>
-        <p style="margin-top:24px;padding-top:18px;border-top:1px solid rgba(244,239,228,.16);font:400 11px/1.4 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(244,239,228,.45)">Buyer photo · used with permission</p>
-        <a href="https://cryptotobahtmethod.gumroad.com/l/bzjnxz" class="bm-link" style="margin-top:18px;display:inline-block;font:600 14px/1 Inter,sans-serif;color:#F4EFE4;border-bottom:1px solid rgba(201,154,63,.6);padding-bottom:4px">Get the same result for $10 →</a>
+      <div style="display:grid;gap:24px">
+        <div class="bm-proof-stack">
+          <figure class="bm-proof-card bm-proof-phone">
+            <img src="./uploads/proof-ready-pickup.jpg" alt="MoneyGram app showing ready to pick up and 20,850.34 THB">
+            <figcaption>Ready to pick up<br><span style="font-size:15px;color:#6B6256">20,850.34 THB shown inside the app.</span></figcaption>
+          </figure>
+          <figure class="bm-proof-card bm-proof-phone">
+            <img src="./uploads/proof-withdraw-amount.jpg" alt="Withdrawal screen showing 641 USDC becomes 20,850.34 THB with zero THB fees">
+            <figcaption>641 USDC -> 20,850.34 THB<br><span style="font-size:15px;color:#6B6256">The quote screen before pickup.</span></figcaption>
+          </figure>
+        </div>
+        <div style="background:#221E1A;border-radius:3px;padding:28px 26px">
+          <p style="font:600 11px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#C99A3F;margin-bottom:20px">What this proves</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px">
+            <li style="display:flex;gap:11px;font:400 15px/1.5 Inter,sans-serif;color:#E4DCCD"><span style="color:#C99A3F">-></span>The app quotes baht before you walk in</li>
+            <li style="display:flex;gap:11px;font:400 15px/1.5 Inter,sans-serif;color:#E4DCCD"><span style="color:#C99A3F">-></span>MoneyGram marks the cash as ready for pickup</li>
+            <li style="display:flex;gap:11px;font:400 15px/1.5 Inter,sans-serif;color:#E4DCCD"><span style="color:#C99A3F">-></span>SCB hands over physical baht after ID + reference check</li>
+          </ul>
+          <p style="margin-top:24px;padding-top:18px;border-top:1px solid rgba(244,239,228,.16);font:400 11px/1.4 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(244,239,228,.45)">Real withdrawal photos · sensitive details blurred</p>
+          <a href="https://cryptotobahtmethod.gumroad.com/l/bzjnxz" class="bm-link" style="margin-top:18px;display:inline-block;font:600 14px/1 Inter,sans-serif;color:#F4EFE4;border-bottom:1px solid rgba(201,154,63,.6);padding-bottom:4px">Get the same result for $10 -></a>
+        </div>
       </div>
+    </div>
+    <div class="bm-proof-note">
+      <figure class="bm-proof-card">
+        <img src="./uploads/proof-phone-cash.jpg" alt="Phone showing the guide next to SCB receipt and Thai baht cash" style="height:390px;object-position:center">
+        <figcaption>The guide beside the actual receipt<br><span style="font-size:15px;color:#6B6256">The same workflow, held at the branch.</span></figcaption>
+      </figure>
+      <figure class="bm-proof-card bm-proof-phone">
+        <img src="./uploads/proof-sending-moneygram.jpg" alt="App screen showing funds being sent to MoneyGram">
+        <figcaption>Funds sent to MoneyGram<br><span style="font-size:15px;color:#6B6256">The transfer step before the cash pickup.</span></figcaption>
+      </figure>
     </div>
   </section>
 
