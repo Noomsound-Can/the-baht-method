@@ -42,8 +42,10 @@
     .bm-step-card{padding:30px 22px;border-right:1px solid rgba(168,154,133,0.3)}
     .bm-step-card:first-child{padding-left:0}
     .bm-step-card:last-child{padding-right:0;border-right:0}
-    .bm-author-card{background:#221E1A;border-radius:3px;padding:48px 52px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
-    .bm-author-mark{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,#C99A3F,#B8502E);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:600;color:#F4EFE4;flex-shrink:0}
+    .bm-step-visuals{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+    .bm-step-visual{margin:0;background:#FBF8F0;border:1px solid rgba(168,154,133,0.5);border-radius:3px;overflow:hidden}
+    .bm-step-visual img{display:block;width:100%;height:300px;object-fit:cover;object-position:top}
+    .bm-step-visual figcaption{padding:12px 14px;font:500 12px/1.4 Inter,sans-serif;color:#6B6256}
     @media (max-width:1050px){.bm-proof-grid{grid-template-columns:1fr}.bm-proof-hero img{height:460px}.bm-proof-stack{grid-template-columns:1fr 1fr}.bm-proof-phone img{height:430px}}
     @media (max-width:700px){.bm-proof-stack{grid-template-columns:1fr}.bm-proof-card img{height:auto;max-height:520px}.bm-proof-hero img{aspect-ratio:4/5}.bm-proof-phone img{max-height:520px;object-position:top}}
     @media (max-width:700px){
@@ -89,10 +91,9 @@
       .bm-step-card>div:first-child{font-size:13px!important;font-family:Inter,sans-serif!important;letter-spacing:.14em!important;color:#B8502E!important;margin-bottom:6px!important}
       .bm-step-card h3{font-size:24px!important;line-height:1.1!important;margin-top:0!important}
       .bm-step-card p{font-size:14px!important;line-height:1.5!important;margin-top:8px!important}
-      .bm-author-card{grid-template-columns:1fr!important;padding:24px 20px!important;gap:0!important;border-radius:3px!important;align-items:start!important}
-      .bm-author-mark{display:none!important}
-      .bm-author-card h3{font-size:25px!important;margin-top:8px!important}
-      .bm-author-card p:last-child{font-size:14px!important;line-height:1.55!important;margin-top:12px!important}
+      .bm-step-visuals{grid-template-columns:1fr 1fr!important;gap:12px!important;margin-top:26px!important}
+      .bm-step-visual img{height:260px!important}
+      .bm-step-visual figcaption{font-size:11.5px!important;padding:10px 11px!important}
       .bm-faq>div{padding:18px 0!important;gap:16px!important;align-items:flex-start!important}
       .bm-faq span:first-child{font-size:21px!important;line-height:1.12!important}
       .bm-faq span:last-child{font-size:22px!important;width:22px!important}
@@ -287,17 +288,23 @@
       <div class="bm-step-card"><div style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:600;color:#C99A3F">03</div><h3 style="margin-top:16px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:23px;color:#1C1814">Walk into a booth</h3><p style="margin-top:10px;font:400 14px/1.55 Inter,sans-serif;color:#564E44">Passport in hand. The app shows the nearest booth. No appointment.</p></div>
       <div class="bm-step-card"><div style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:600;color:#C99A3F">04</div><h3 style="margin-top:16px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:23px;color:#1C1814">Pocket physical baht</h3><p style="margin-top:10px;font:400 14px/1.55 Inter,sans-serif;color:#564E44">$1 flat. Up to $2,500/day. Receipt printed, on your way.</p></div>
     </div>
-  </section>
-
-  <!-- AUTHOR -->
-  <section style="max-width:1180px;margin:0 auto;padding:104px 32px 0">
-    <div class="bm-author-card">
-      <div class="bm-author-mark">R</div>
-      <div>
-        <p style="font:500 11px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#C99A3F">Field-tested in Bangkok</p>
-        <h3 style="margin-top:10px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:30px;color:#F4EFE4">Used at SCB + MoneyGram</h3>
-        <p style="margin-top:14px;max-width:64ch;font:400 16px/1.65 Inter,sans-serif;color:#C9BFAE">This is not a theory PDF. The screenshots and receipts above come from the exact withdrawal flow: crypto balance, MoneyGram pickup quote, branch visit, printed receipt, physical baht.</p>
-      </div>
+    <div class="bm-step-visuals">
+      <figure class="bm-step-visual">
+        <img src="./uploads/step-hold-wallet.jpg" alt="Crypto wallet balance before withdrawal">
+        <figcaption>01 · Balance ready</figcaption>
+      </figure>
+      <figure class="bm-step-visual">
+        <img src="./uploads/step-swap-progress.jpg" alt="Exchange in progress screen">
+        <figcaption>02 · Swap route</figcaption>
+      </figure>
+      <figure class="bm-step-visual">
+        <img src="./uploads/proof-ready-pickup.jpg" alt="MoneyGram ready to pick up screen">
+        <figcaption>03 · Ready to pick up</figcaption>
+      </figure>
+      <figure class="bm-step-visual">
+        <img src="./uploads/proof-cash-receipt.jpg" alt="Thai baht cash and SCB MoneyGram receipt">
+        <figcaption>04 · Cash + receipt</figcaption>
+      </figure>
     </div>
   </section>
 
